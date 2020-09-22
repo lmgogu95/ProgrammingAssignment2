@@ -1,8 +1,8 @@
 #The functions compute the inverse of a square matrix. 
 
 ## This function verifies if the inverse of a matrix is already cached. 
-### If it is cached, it avoids computing it and just pulls it out of cache. 
-### If it is not cached, then the function computes the inverse of a matrix. 
+### If it is cached it avoids computing it and just pulls it out of cache. 
+### If it is not cached, then the function computes the inverse of the matrix. 
 
  
 makeCacheMatrix <- function(x = matrix()) {
@@ -22,7 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function computes the inverse of a matrix ONLY if it is not already cached.
+## This function computes the inverse of a matrix but ONLY if it is not already cached.
 
 cacheSolve <- function(x, ...) {
         i<-x$getinverse()
